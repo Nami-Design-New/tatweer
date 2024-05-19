@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <!-- main -->
   <link rel="stylesheet" href="css/main.css" />
+  <!-- filepond -->
+  <link rel="stylesheet" href="css/filepond.min.css" />
   <!-- Custom style  -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -35,12 +37,12 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav  ">
           <a class="nav-link" href="index.html"> home </a>
           <a class="nav-link" href="index.html#aboutUs"> About Us </a>
           <a class="nav-link" href="projects.html"> Projects </a>
-          <a class="nav-link" href="Jobs.html"> Jobs  </a>
+          <a class="nav-link" href="Jobs.html"> Jobs </a>
           <a class="nav-link" href="contact.html"> Contact Us </a>
         </ul>
       </div>
@@ -56,114 +58,86 @@
       <div class="container">
         <div class="links">
           <a href="index.html"> Home </a>
-          <a href="projects.html"> projects </a>
-          <a href="#!" class="active"> project Details
-          </a>
+          <a href="Jobs.html"> Jobs </a>
+          <a href="#!" class="active"> Job details </a>
         </div>
-        <h2> project Details
-        </h2>
+        <h2> Job details </h2>
       </div>
     </section>
-    <!-- project Details -->
-    <section class="projectDetails">
+
+    <!-- Career -->
+    <section class="jobDetails">
       <div class="container">
-        <div class="row justify-content-around">
-          <div class="col-lg-7 col-xl-7 p-2">
-            <!-- main project details -->
-            <div class="project" data-aos="fade-up">
-
-              <div class="swiperContainer">
-                <div class="swiper projectDetailsSlider">
-                  <div class="swiper-wrapper">
-                    <!-- swiper-slide -->
-                    <div class="swiper-slide">
-                      <a data-fancybox="madinatyProject" href="img/s1.webp">
-                        <img src="img/s1.webp" alt="">
-                      </a>
-                    </div>
-                    <!-- swiper-slide -->
-                    <div class="swiper-slide">
-                      <a data-fancybox="madinatyProject" href="img/s2.webp">
-                        <img src="img/s2.webp" alt="">
-                      </a>
-                    </div>
-                    <!-- swiper-slide -->
-                    <div class="swiper-slide">
-                      <a data-fancybox="madinatyProject" href="img/s3.webp">
-                        <img src="img/s3.webp" alt="">
-                      </a>
-                    </div>
-                    <!-- swiper-slide -->
-                    <div class="swiper-slide">
-                      <a data-fancybox="madinatyProject" href="img/s4.webp">
-                        <img src="img/s4.webp" alt="">
-                      </a>
-                    </div>
-                  </div>
+        <div class="row">
+          <div class="col-md-7 col-lg-8 p-3">
+            <!-- Details -->
+            <div class="details">
+              <img class="jobImg" src="img/job1.jpg" alt="Software Engineer Image">
+              <div class="jobDetails-content">
+                <h3 class="jobTitle">Software Engineer</h3>
+                <div class="jobMeta">
+                  <p><strong>Location:</strong> Saudi Arabia</p>
+                  <p><strong>Job Type:</strong> Full-time</p>
+                  <p><strong>Category:</strong> Software Development</p>
                 </div>
-
-                <!-- swiper Control -->
-                <div class="swiperControl">
-                  <div class="swiperBtns">
-                    <div class="projectDetailsSliderPrev swiper-button-prev"></div>
-                    <div class="projectDetailsSliderNext swiper-button-next"></div>
-                  </div>
+                <div class="jobDescription">
+                  <p>
+                    We are looking for a professional Software Engineer to join our team. You should have strong skills
+                    in
+                    software development and a deep understanding of programming concepts.
+                  </p>
+                  <p>
+                    <strong>Responsibilities:</strong>
+                  </p>
+                  <ul>
+                    <li>Design and develop software applications to meet client requirements.</li>
+                    <li>Test and debug errors, making necessary improvements.</li>
+                    <li>Collaborate with the development team to identify software needs and design appropriate
+                      solutions.
+                    </li>
+                    <li>Stay updated on developments in information technology and programming to remain knowledgeable
+                      about the latest technologies.</li>
+                  </ul>
+                  <p>
+                    <strong>Requirements:</strong>
+                  </p>
+                  <ul>
+                    <li>Previous experience in software development.</li>
+                    <li>Strong knowledge of programming languages such as Java, C++, or Python.</li>
+                    <li>Ability to work within a team and achieve goals effectively.</li>
+                    <li>Degree in Computer Science or a related field.</li>
+                  </ul>
                 </div>
               </div>
-
-
-              <h2 class="title"> Eastern Province Cement ( EPCCO ) </h2>
-              <p class="description">
-                40 different buildings in addition to precast, it contain 1,600 tons of steel construction
-                and 20,000 m3 of cast in site construction 40 different buildings in addition to precast, it contain
-                1,600 tons of steel construction
-                and 20,000 m3 of cast in site construction 40 different buildings in addition to precast, it contain
-                1,600 tons of steel construction
-                and 20,000 m3 of cast in site construction
-                40 different buildings in addition to precast, it contain 1,600 tons of steel construction
-                and 20,000 m3 of cast in site construction
-              </p>
             </div>
           </div>
-          <div class="col-lg-5 col-xl-4 p-1">
-            <div class="Moreprojects">
-              <h1 class="headTitle"> more projects </h1>
-              <!-- project -->
-              <a href="project-details.html" class="project" data-aos="fade-up">
-                <img src="img/s2.webp" alt="">
-                <div class="data">
-                  <h6 class="title"> LULU Hypermarket </h6>
-                  <p class="description">
-                    TATWEER fabricating and erecting Lulu Hypermarket with 368 columns in different types and sizes with
-                    height up to 21.6 meters.
-                  </p>
+          <div class="col-md-5 col-lg-4 p-3">
+            <div class="jobForm">
+              <h3 class="titleTwo">Apply for the Job</h3>
+              <form action="">
+                <div>
+                  <label for="">Full Name *</label>
+                  <input type="text" name="" id="" class="form-control">
                 </div>
-              </a>
-              <!-- project -->
-              <a href="project-details.html" class="project" data-aos="fade-up">
-                <img src="img/s3.webp" alt="">
-                <div class="data">
-                  <h6 class="title"> Railway Bridges </h6>
-                  <p class="description">
-                    140 meters bridge beams for railway and traffic with span of 38 meter including transportation and
-                    erection
-                  </p>
+                <div>
+                  <label for="">Email Address *</label>
+                  <input type="email" name="" id="" class="form-control">
                 </div>
-              </a>
-              <!-- project -->
-              <a href="project-details.html" class="project" data-aos="fade-up">
-                <img src="img/s4.webp" alt="">
-                <div class="data">
-                  <h6 class="title"> Nesma Training School </h6>
-                  <p class="description">
-                    A full precast building contains 24 columns, two precast staircases and 210 meters of beams.
-                  </p>
+                <div>
+                  <label for="">Phone Number *</label>
+                  <input type="number" name="" id="" class="form-control">
                 </div>
-              </a>
+                <div>
+                  <label for="">Image or Document or PDF File *</label>
+                  <input type="file" name="" id="" class="filepond-multiple">
+                </div>
+                <button type="submit" class="send">Submit</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
+
     </section>
   </content>
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
@@ -263,6 +237,8 @@
   <!--////////////////////////////////////////////////////////////////////////////////-->
   <!-- main -->
   <script src="js/main.js"></script>
+  <!-- filepond -->
+  <script src="js/filepond.min.js"></script>
   <!-- custom -->
   <script src="js/custom.js"></script>
 </body>

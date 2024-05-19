@@ -1538,3 +1538,110 @@ footer {
     font-family: "RobotoBlack", sans-serif;
   }
 }
+
+
+
+.careerPage {
+  padding:  48px 0;
+  .job {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+    // box-shadow: var(--BigShadow);
+    height: 100%;
+    border: 1px dashed var(--mainColor20);
+    border-radius: 8px;
+    img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      max-height: 200px;
+      object-fit: cover;
+      background-color: var(--secondColor);
+      border-radius: 8px 8px 0 0;
+    }
+    .text {
+      padding: 8px 16px ;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 8px;
+      .jobTitle {
+        font-weight: bold;
+        color: var(--darkColor);
+      }
+      .des {
+        font-size: 13px;
+        flex: 1;
+      }
+      a {
+        margin-top: 16px;
+        text-align: center;
+        justify-content: center;
+        padding: 8px 16px;
+        font-size: 13px;
+        background-color: var(--mainColor05);
+        border-radius: 8px;
+        color: var(--mainColor);
+        font-weight: bold;
+      }
+    }
+  }
+}
+.jobForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  background-color: var(--mainColor05);
+  border-radius: 8px;
+  position: sticky;
+  top: 90px;
+  .titleTwo {
+    font-weight: bold;
+    color: var(--secondColor);
+    text-transform: none;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .send {
+      background-color: var(--secondColor);
+      padding: 16px;
+      width: min(100% - 24px, 300px);
+      margin: auto;
+      color: var(--whiteColor);
+      border-radius: 100px;
+    }
+  }
+}
+.filepond--credits {
+  display: none !important;
+}
+.filepond--image-clip {
+  direction: ltr !important;
+}
+.jobDetails{
+  .details{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .jobImg{
+      width: 100%;
+      aspect-ratio: 3/2;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .jobTitle{
+      font-weight: bold;
+      margin: 8px 0;
+      color: var(--darkColor);
+    }
+  }
+}
