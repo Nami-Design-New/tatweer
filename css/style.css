@@ -1713,7 +1713,6 @@ footer .border-top {
   top: 50%;
   transform: translateY(-50%);
   z-index: 99;
-  border-radius: 0 8px 8px 0;
   overflow: hidden;
 }
 .floatBtns a {
@@ -1726,6 +1725,12 @@ footer .border-top {
   width: 40px;
   height: 40px;
   font-size: 16px;
+}
+.floatBtns a:first-child {
+  border-top-right-radius: 8px;
+}
+.floatBtns a:last-child {
+  border-bottom-right-radius: 8px;
 }
 .floatBtns a img {
   width: 16px;
@@ -1748,4 +1753,7 @@ footer .border-top {
 }
 .floatBtns a.youtube {
   background-color: #FF0000;
+}
+.floatBtns a:hover {
+  width: 48px;
 }/*# sourceMappingURL=style.css.map */
