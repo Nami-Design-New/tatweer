@@ -548,7 +548,7 @@ header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-lin
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
-  background: linear-gradient(0deg, rgba(30, 34, 44, 0.35) 0%, rgba(30, 34, 44, 0.35) 100%), url("../assets/slideshow-img-01.webp") lightgray 50%/cover no-repeat;
+  background: linear-gradient(0deg, rgba(30, 34, 44, 0.35) 0%, rgba(30, 34, 44, 0.35) 100%);
 }
 .mainSlider .swiper-slide {
   display: flex;
@@ -1705,4 +1705,47 @@ footer .border-top {
   font-weight: bold;
   margin: 8px 0;
   color: var(--darkColor);
+}
+
+.floatBtns {
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  border-radius: 0 8px 8px 0;
+  overflow: hidden;
+}
+.floatBtns a {
+  cursor: pointer;
+  background-color: var(--darkColor);
+  color: var(--whiteColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+.floatBtns a img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: invert(1);
+}
+.floatBtns a.instagram {
+  background-color: #962fbf;
+}
+.floatBtns a.whatsapp {
+  background-color: #25D366;
+}
+.floatBtns a.tiktok {
+  background-color: #000000;
+}
+.floatBtns a.linkedIn {
+  background-color: #0077B5;
+}
+.floatBtns a.youtube {
+  background-color: #FF0000;
 }/*# sourceMappingURL=style.css.map */

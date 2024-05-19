@@ -303,7 +303,7 @@ header {
       }
     }
 
-    .language{
+    .language {
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -528,11 +528,10 @@ header {
   align-items: flex-end;
   gap: 10px;
   background: linear-gradient(
-      0deg,
-      rgba(30, 34, 44, 0.35) 0%,
-      rgba(30, 34, 44, 0.35) 100%
-    ),
-    url("../assets/slideshow-img-01.webp") lightgray 50% / cover no-repeat;
+    0deg,
+    rgba(30, 34, 44, 0.35) 0%,
+    rgba(30, 34, 44, 0.35) 100%
+  );
   .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -673,7 +672,7 @@ header {
     position: relative;
     z-index: 2;
     --whiteColor: #000;
- 
+
     .swiperBtns .swiper-button-next,
     .swiperBtns .swiper-button-prev {
       &::after {
@@ -1295,7 +1294,7 @@ footer {
 }
 .projectDetails {
   padding: 50px 0;
-  .swiperContainer{
+  .swiperContainer {
     position: relative;
   }
 
@@ -1319,7 +1318,6 @@ footer {
       }
     }
   }
-
 
   .project {
     height: 100%;
@@ -1539,10 +1537,8 @@ footer {
   }
 }
 
-
-
 .careerPage {
-  padding:  48px 0;
+  padding: 48px 0;
   .job {
     display: flex;
     flex-direction: column;
@@ -1561,7 +1557,7 @@ footer {
       border-radius: 8px 8px 0 0;
     }
     .text {
-      padding: 8px 16px ;
+      padding: 8px 16px;
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -1626,22 +1622,67 @@ footer {
 .filepond--image-clip {
   direction: ltr !important;
 }
-.jobDetails{
-  .details{
+.jobDetails {
+  .details {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    .jobImg{
+    .jobImg {
       width: 100%;
       aspect-ratio: 3/2;
       max-height: 400px;
       object-fit: cover;
       border-radius: 8px;
     }
-    .jobTitle{
+    .jobTitle {
       font-weight: bold;
       margin: 8px 0;
       color: var(--darkColor);
     }
   }
+}
+
+.floatBtns {
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  border-radius: 0 8px 8px 0;
+  overflow: hidden;
+  a {
+    cursor: pointer;
+    background-color: var(--darkColor);
+    color: var(--whiteColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    img{
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      filter: invert(1);
+    }
+    &.instagram {
+      background-color: #962fbf  ;
+    }
+    &.whatsapp {
+      background-color: #25D366  ;
+    }
+    &.tiktok {
+      background-color: #000000  ;
+    }
+    &.linkedIn {
+      background-color: #0077B5  ;
+    }
+    &.youtube {
+      background-color: #FF0000  ;
+    }
+
+  }
+
+ 
 }

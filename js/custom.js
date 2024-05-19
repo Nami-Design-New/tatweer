@@ -229,7 +229,3 @@ $(document).ready(function () {
   const elements = document.querySelectorAll(".counterUp");
   elements.forEach((el) => IO.observe(el));
 });
-  // filepond
-  $(".filepond-multiple").filepond({
-    allowMultiple: true,
-  });
