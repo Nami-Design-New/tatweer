@@ -1710,6 +1710,20 @@ footer {
       color: var(--darkColor);
     }
     .table {
+      thead {
+        background-color: var(--secondColor);
+        color: var(--whiteColor);
+      }
+      tbody {
+        > tr {
+          > td {
+            &:first-child:not(.child) {
+              background-color: var(--mainColor);
+              color: var(--whiteColor);
+            }
+          }
+        }
+      }
       tr {
         td {
           white-space: nowrap;
@@ -1742,4 +1756,13 @@ footer {
 .table td {
   font-size: 14px;
   padding: 16px;
+}
+.active > .page-link,
+.page-link.active {
+  --bs-pagination-active-bg: var(--mainColor);
+  --bs-pagination-active-border-color: var(--mainColor);
+}
+.page-link {
+  --bs-pagination-color: var(--mainColor);
+  --bs-pagination-hover-color: var(--mainColor);
 }

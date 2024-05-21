@@ -1772,6 +1772,14 @@ footer .border-top {
   font-weight: bold;
   color: var(--darkColor);
 }
+.completedProjects .inner .table thead {
+  background-color: var(--secondColor);
+  color: var(--whiteColor);
+}
+.completedProjects .inner .table tbody > tr > td:first-child:not(.child) {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
 .completedProjects .inner .table tr td {
   white-space: nowrap;
 }
@@ -1800,4 +1808,15 @@ footer .border-top {
 .table td {
   font-size: 14px;
   padding: 16px;
+}
+
+.active > .page-link,
+.page-link.active {
+  --bs-pagination-active-bg: var(--mainColor);
+  --bs-pagination-active-border-color: var(--mainColor);
+}
+
+.page-link {
+  --bs-pagination-color: var(--mainColor);
+  --bs-pagination-hover-color: var(--mainColor);
 }/*# sourceMappingURL=style.css.map */
