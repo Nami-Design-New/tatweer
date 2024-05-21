@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="css/main.css" />
   <!-- Custom style  -->
   <link rel="stylesheet" href="css/style.css" />
+  <!--datatable css-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
+  <!--datatable responsive css-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
 </head>
 
 <body>
@@ -45,7 +49,6 @@
         </ul>
       </div>
       <a class="language" href="#!"> ع </a>
-
     </nav>
   </header>
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
@@ -226,15 +229,11 @@
     </div>
     <!-- latest -->
     <section class="latestProjects">
-
-
-
       <div class="swiperContainer">
         <!-- title -->
         <h2 class="aboutTitle" data-aos="fade-up"> Latest projects added </h2>
         <!-- slider -->
         <div class="swiper latestProjectsSlider">
-
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="project-details.html" class="project" data-aos="fade-up">
@@ -353,7 +352,6 @@
               </a>
             </div>
           </div>
-
           <!-- swiper Control -->
           <div class="swiperControl">
             <div class="latestProjectsSliderPagination swiper-pagination"></div>
@@ -362,11 +360,77 @@
               <div class="latestProjectsSliderNext swiper-button-next"></div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
-
+    <!-- Completed Projects -->
+    <section class="completedProjects">
+      <div class="inner">
+        <h2 class="aboutTitle" data-aos="fade-up"> Completed Projects </h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th> S.No </th>
+              <th> Project Title </th>
+              <th> Project No </th>
+              <th> Description </th>
+              <th> Status </th>
+              <th> Remarks </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> 1 </td>
+              <td> Commercial </td>
+              <td> COM –112 </td>
+              <td> (FERIJ BIN ABDUL AZIZ)OFFICES BUILDING (G+M+2) </td>
+              <td> Completed </td>
+              <td> 15 Months Direct Contract </td>
+            </tr>
+            <tr>
+              <td> 2 </td>
+              <td> Commercial </td>
+              <td> COM –113 </td>
+              <td> (FERIJ BIN ABDUL AZIZ)OFFICES BUILDING (G+M+2) </td>
+              <td> Completed </td>
+              <td> 15 Months Direct Contract </td>
+            </tr>
+            <tr>
+              <td> 3 </td>
+              <td> Commercial </td>
+              <td> COM –114 </td>
+              <td> (FERIJ BIN ABDUL AZIZ)OFFICES BUILDING (G+M+2) </td>
+              <td> Completed </td>
+              <td> 15 Months Direct Contract </td>
+            </tr>
+            <tr>
+              <td> 4 </td>
+              <td> Commercial </td>
+              <td> COM –115 </td>
+              <td> (FERIJ BIN ABDUL AZIZ)OFFICES BUILDING (G+M+2) </td>
+              <td> Completed </td>
+              <td> 15 Months Direct Contract </td>
+            </tr>
+            <tr>
+              <td> 5 </td>
+              <td> Commercial </td>
+              <td> COM –116 </td>
+              <td> (FERIJ BIN ABDUL AZIZ)OFFICES BUILDING (G+M+2) </td>
+              <td> Completed </td>
+              <td> 15 Months Direct Contract </td>
+            </tr>
+            <tr>
+              <td> 6 </td>
+              <td> Commercial </td>
+              <td> COM –117 </td>
+              <td> (FERIJ BIN ABDUL AZIZ)OFFICES BUILDING (G+M+2) </td>
+              <td> Completed </td>
+              <td> 15 Months Direct Contract </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
   </content>
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <!--((((((((((((((((( / content )))))))))))))))))))-->
@@ -455,7 +519,7 @@
       </div>
     </div>
     <!-- float -->
-        <!-- float -->
+    <!-- float -->
     <section class="floatBtns">
       <a href="#!" target="_blank" class="instagram"> <img src="img/icons/instagram.svg" alt=""> </a>
       <a href="#!" target="_blank" class="youtube"> <img src="img/icons/youtube.svg" alt=""> </a>
@@ -476,6 +540,17 @@
   <script src="js/main.js"></script>
   <!-- custom -->
   <script src="js/custom.js"></script>
+  <!--datatable js-->
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".table").DataTable({
+        responsive: true
+      });
+    })
+  </script>
 </body>
 
 </html>

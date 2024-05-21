@@ -302,7 +302,6 @@ header {
         object-fit: contain;
       }
     }
-
     .language {
       display: inline-flex;
       justify-content: center;
@@ -672,7 +671,6 @@ header {
     position: relative;
     z-index: 2;
     --whiteColor: #000;
-
     .swiperBtns .swiper-button-next,
     .swiperBtns .swiper-button-prev {
       &::after {
@@ -684,7 +682,6 @@ header {
     }
   }
 }
-
 .aboutTitle {
   font-weight: bold;
   text-transform: uppercase;
@@ -1297,7 +1294,6 @@ footer {
   .swiperContainer {
     position: relative;
   }
-
   .projectDetailsSlider {
     position: relative;
     aspect-ratio: 9/6;
@@ -1318,7 +1314,6 @@ footer {
       }
     }
   }
-
   .project {
     height: 100%;
     display: flex;
@@ -1536,7 +1531,6 @@ footer {
     font-family: "RobotoBlack", sans-serif;
   }
 }
-
 .careerPage {
   padding: 48px 0;
   .job {
@@ -1641,7 +1635,6 @@ footer {
     }
   }
 }
-
 .floatBtns {
   position: fixed;
   left: 0px;
@@ -1659,38 +1652,94 @@ footer {
     width: 40px;
     height: 40px;
     font-size: 16px;
-    &:first-child{
+    &:first-child {
       border-top-right-radius: 8px;
     }
-    &:last-child{
+    &:last-child {
       border-bottom-right-radius: 8px;
     }
-    img{
+    img {
       width: 16px;
       height: 16px;
       object-fit: contain;
       filter: invert(1);
     }
     &.instagram {
-      background-color: #962fbf  ;
+      background-color: #962fbf;
     }
     &.whatsapp {
-      background-color: #25D366  ;
+      background-color: #25d366;
     }
     &.tiktok {
-      background-color: #000000  ;
+      background-color: #000000;
     }
     &.linkedIn {
-      background-color: #0077B5  ;
+      background-color: #0077b5;
     }
     &.youtube {
-      background-color: #FF0000  ;
+      background-color: #ff0000;
     }
-    &:hover{
+    &:hover {
       width: 48px;
     }
-
   }
+}
+// .table > :not(caption) > * > * {
+//   --bs-table-bg: var(--mainColor05);
+//   transition: .3s;
+//   padding: 16px;
+// }
+// .table-striped > tbody > tr:nth-of-type(odd) > * {
+//   --bs-table-striped-bg: var(--mainColor05);
+// }
+// .table-primary {
+//   --bs-table-hover-bg: var(--mainColor);
+//   --bs-table-hover-color: var(--whiteColor);
+// }
 
- 
+.completedProjects {
+  margin-bottom: 40px;
+  .inner {
+    width: min(100% - 16px, 1440px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .title {
+      font-weight: bold;
+      color: var(--darkColor);
+    }
+    .table {
+      tr {
+        td {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.dtr-details {
+  display: flex !important;
+  flex-direction: column;
+  font-size: 14px;
+  > li {
+    border-bottom: 1px solid #efefef;
+    padding: 0.5em 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    .dtr-data {
+      white-space: normal;
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+  }
+}
+.table td {
+  font-size: 14px;
+  padding: 16px;
 }

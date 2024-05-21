@@ -1743,17 +1743,61 @@ footer .border-top {
   background-color: #962fbf;
 }
 .floatBtns a.whatsapp {
-  background-color: #25D366;
+  background-color: #25d366;
 }
 .floatBtns a.tiktok {
   background-color: #000000;
 }
 .floatBtns a.linkedIn {
-  background-color: #0077B5;
+  background-color: #0077b5;
 }
 .floatBtns a.youtube {
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
 .floatBtns a:hover {
   width: 48px;
+}
+
+.completedProjects {
+  margin-bottom: 40px;
+}
+.completedProjects .inner {
+  width: min(100% - 16px, 1440px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.completedProjects .inner .title {
+  font-weight: bold;
+  color: var(--darkColor);
+}
+.completedProjects .inner .table tr td {
+  white-space: nowrap;
+}
+
+.dtr-details {
+  display: flex !important;
+  flex-direction: column;
+  font-size: 14px;
+}
+.dtr-details > li {
+  border-bottom: 1px solid #efefef;
+  padding: 0.5em 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+.dtr-details > li .dtr-data {
+  white-space: normal;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.table td {
+  font-size: 14px;
+  padding: 16px;
 }/*# sourceMappingURL=style.css.map */
