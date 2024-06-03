@@ -320,13 +320,22 @@ header .navbar {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0.602187px 0.602187px -1.25px, rgba(0, 0, 0, 0.043) 0px 2.28853px 2.28853px -2.5px, rgba(0, 0, 0, 0.016) 0px 10px 10px -3.75px;
   opacity: 1;
 }
-header .navbar .navbar-brand {
-  flex: 1;
-}
 header .navbar .navbar-brand img {
   height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+header .navbar .phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  color: var(--mainColor);
+  padding: 0 8px;
+}
+header .navbar .phone svg {
+  width: 24px;
+  height: 24px;
 }
 header .navbar .language {
   display: inline-flex;

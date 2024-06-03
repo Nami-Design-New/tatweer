@@ -296,11 +296,24 @@ header {
       rgba(0, 0, 0, 0.016) 0px 10px 10px -3.75px;
     opacity: 1;
     .navbar-brand {
-      flex: 1;
       img {
         height: 50px;
         object-fit: contain;
       }
+    
+    }
+    .phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
+      color: var(--mainColor);
+padding: 0 8px;
+        svg{
+          width: 24px;
+          height: 24px;
+        }
+      
     }
     .language {
       display: inline-flex;
@@ -1696,8 +1709,6 @@ footer {
   --bs-pagination-hover-color: var(--mainColor);
 }
 
-
-
 .partners {
   background-color: var(--mainColor05);
   padding: 60px 0;
@@ -1729,14 +1740,13 @@ footer {
   }
 }
 
-
 .galleryPage {
   padding: 20px 0 00px;
   .inner {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
-    
+
     a {
       flex: 1;
       display: flex;
