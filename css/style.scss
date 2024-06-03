@@ -835,80 +835,9 @@ header {
     }
   }
 }
-.partners {
-  background-color: var(--mainColor);
-  position: relative;
-  z-index: 2;
-  padding: 100px 0 20px;
-  background-image: linear-gradient(60deg, #a7a9ac2d, #a7a9ac65);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  .sectionTitle {
-    flex-direction: column;
-    padding-bottom: 10px;
-  }
-  .top {
-    margin-bottom: 40px;
-    text-align: center;
-    .title {
-      font-weight: bold;
-      color: var(--whiteColor);
-      margin-bottom: 16px;
-      font-size: 36px !important;
-      @media (max-width: 768px) {
-        font-size: 24px !important;
-      }
-    }
-    .hint {
-      color: var(--lightGrayColor);
-      width: min(100% - 40px, 800px);
-      margin: auto;
-    }
-  }
-  .referenceLogo {
-    height: 150px;
-    padding: 10px 20px;
-    position: relative;
-    &::after {
-      content: "";
-      display: flex;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 0%;
-      background-color: var(--whiteColor);
-      transition: var(--transition);
-      z-index: -1;
-    }
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-      filter: brightness(0) invert(1);
-      transition: var(--transition);
-    }
-    &:hover {
-      &::after {
-        content: "";
-        height: 100%;
-      }
-      img {
-        filter: none;
-      }
-    }
-  }
-  .swiperControl {
-    position: relative;
-    padding-top: 60px;
-    .swiper-pagination {
-      justify-content: center;
-    }
-  }
-}
+
 footer {
-  background-color: var(--darkColor);
+  background-color: var(--secondColor);
   position: relative;
   z-index: 2;
   padding: 40px 0;
@@ -1700,7 +1629,7 @@ footer {
 .completedProjects {
   margin-bottom: 40px;
   .inner {
-    width: min(100% - 16px, 1440px);
+    width: min(100% - 16px, 1320px);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -1765,4 +1694,87 @@ footer {
 .page-link {
   --bs-pagination-color: var(--mainColor);
   --bs-pagination-hover-color: var(--mainColor);
+}
+
+
+
+.partners {
+  background-color: var(--mainColor05);
+  padding: 60px 0;
+  .partnersSlider {
+    padding-top: 20px;
+  }
+  .swiperControl {
+    position: relative;
+    padding-top: 60px;
+    .swiper-pagination {
+      justify-content: center;
+      .swiper-pagination-bullet {
+        background-color: var(--mainColor);
+      }
+    }
+  }
+  .logo {
+    box-shadow: rgba(0, 0, 0, 0.061) 0px 1px 4px;
+    background-color: var(--whiteColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    img {
+      object-fit: contain;
+      height: 140px;
+      padding: 16px;
+    }
+  }
+}
+
+
+.galleryPage {
+  padding: 20px 0 00px;
+  .inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    
+    a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      min-width: 20vw;
+      border: 3px solid var(--secondColor30);
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+      }
+      .title {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        padding: 8px 16px;
+        z-index: 3;
+        color: var(--whiteColor);
+        background-color: #5c606870;
+      }
+      &:nth-child(4n) {
+        min-width: 40vw;
+      }
+      @media (max-width: 768px) {
+        height: 200px;
+        min-width: 40vw;
+        &:nth-child(4n) {
+          min-width: 60vw;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      gap: 4px;
+    }
+  }
 }
